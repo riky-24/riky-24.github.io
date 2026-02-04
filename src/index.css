@@ -1,0 +1,84 @@
+:root {
+  --roblox-dark-bg: #191B1D; /* Deep background */
+  --roblox-card-bg: #232527; /* Card background */
+  --roblox-header-bg: #111213; /* Navbar background */
+  --roblox-text-primary: #FFFFFF;
+  --roblox-text-secondary: #BDC2C8; /* Muted text */
+  --roblox-blue: #00A2FF; /* Action buttons */
+  --roblox-blue-hover: #008ACD;
+  --roblox-green: #00B06F; /* Success/Online */
+  --roblox-font: 'Gotham', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --border-radius: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--roblox-font);
+  background-color: var(--roblox-dark-bg);
+  color: var(--roblox-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--roblox-dark-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Utility Classes for Roblox Vibe */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn-roblox {
+  background-color: white;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-roblox:hover {
+  filter: brightness(0.9);
+}
+
+.btn-primary {
+  background-color: var(--roblox-text-primary);
+  color: var(--roblox-dark-bg);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+}
+.btn-secondary:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
